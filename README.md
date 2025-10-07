@@ -2,68 +2,77 @@ Semiconductor Packaging Course Repository
 
 A comprehensive repository for the Semiconductor Packaging course, illustrating the evolution of packaging technologies from basic concepts to advanced 3D integration. This repository combines theoretical foundations, manufacturing processes, and hands-on simulations using ANSYS Icepak and ANSYS Q3D Extractor to cover the full semiconductor packaging lifecycle from wafer to finished package.
 
-Table of Contents
 
-Module 1: Packaging Evolution – Basics to 3D Integration
+## Modules Overview
 
-Introduction to Semiconductor Packaging and Industry Overview
+### Module 1 — Packaging Evolution: Basics to 3D Integration
+**Folder:** [`Module1`](Module1/README.md)  
+**Topics:**
+1. Introduction to Semiconductor Packaging and Industry Overview  
+2. Understanding Package Requirements and Foundational Package Types  
+3. Evolving Package Architectures — From Single Chip to Multi‑Chip Modules  
+4. Interposers, Redistribution Layers (RDL), and 2.5D/3D Packaging  
+5. Comparative Analysis & Selecting the Right Packaging Solution
 
-Understanding Package Requirements and Foundational Package Types
+### Module 2 — From Wafer to Package: Assembly & Manufacturing
+**Folder:** [`Module2`](Module2/README.md)  
+**Topics:**
+1. Setting the Stage — Supply Chain and Facilities  
+2. Wafer Pre‑Preparation — Grinding and Dicing  
+3. Wire Bond Packaging — Die Attach to Molding  
+4. Flip‑Chip Assembly — Bump Formation and Underfill  
+5. Wafer‑Level Packaging and Conclusion
 
-Evolving Package Architectures – From Single Chip to Multi-Chip Modules
+### Module 3 — Labs: Thermal Simulation of Packages with ANSYS
+**Folder:** [`Module3`](Module3/README.md)  
+**Topics:**
+1. Getting Started with ANSYS Electronics Desktop (AEDT)  
+2. Setting Up a Flip‑Chip BGA Package  
+3. Material Definitions and Thermal Power Sources  
+4. Meshing and Running the Thermal Analysis  
+5. Viewing Results & Exploring Other Package Types
 
-Interposers, Re-distribution Layers, and 2.5D/3D Packaging Approaches
+> **Screenshots:** place Icepak plots (temp contours, max hot‑spot, path traces, etc.) in `Module3/images/`.  
+> **(Optional)** Future: save `.aedt`, `.icepakdb`, or exported results in `Module3/simulations/`.
 
-Comparative Analysis and Selecting the Right Packaging Solution
+### Module 4 — Ensuring Package Reliability: Testing & Validation
+**Folder:** [`Module4`](Module4/README.md)  
+**Topics:**
+1. Introduction to Package Testing & Electrical Functionality Checks  
+2. Reliability and Performance Testing of Semiconductor Packages
 
-Assets: Add module-specific screenshots to Module1_Packaging_Evolution/images/ and simulation files to Module1_Packaging_Evolution/simulations/. Document notes in Module1_Packaging_Evolution/README.md.
+### Module 5 — Package Design & Modeling from Scratch
+**Folder:** [`Module5`](Module5/README.md)  
+**Topics:**
+1. Package Cross‑Section Modeling in AEDT  
+2. Creating the Die and Substrate  
+3. Adding Die Attach Material and Bond Pads  
+4. Wire‑Bond Creation & Material Assignment  
+5. Applying Mold Compound & Finalizing the Package Model
 
-Module 2: From Wafer to Package – Assembly and Manufacturing Essentials
+> **Screenshots:** add Q3D/AEDT geometry and routing images to `Module5/images/`.  
+> **(Optional)** Future: store Q3D/AEDT projects or exported parasitics in `Module5/simulations/`.
 
-Setting the Stage – Supply Chain and Facilities
+---
 
-Wafer Pre-Preparation – Grinding and Dicing
+## Tools & Versions
 
-Wire Bond Packaging – Die Attach to Molding
+- **ANSYS Icepak** — thermal simulation of packages (heat sources, materials, meshing, temperature fields)  
+- **ANSYS Q3D Extractor** — parasitic extraction for package interconnects  
+- **ANSYS Electronics Desktop (AEDT)** — host environment for Icepak/Q3D  
+- *(General utilities)* Markdown, diagramming tools, and standard image viewers/editors
 
-Flip Chip Assembly – Bump Formation and Underfill
+> Record exact versions you used (e.g., *2023 R2*) in each module `README.md` for reproducibility.
 
-Wafer Level Packaging and Conclusion
+---
 
-Assets: Add module-specific screenshots to Module2_From_Wafer_to_Package/images/ and simulation files to Module2_From_Wafer_to_Package/simulations/. Keep module notes in Module2_From_Wafer_to_Package/README.md.
+## How to Use This Repo
 
-Module 3: Labs – Thermal Simulation of Semiconductor Packages with ANSYS
+- Browse modules from the [overview](#modules-overview) above or open each module folder directly.  
+- Images/snapshots live in each module’s `images/` directory.  
+- (Future) Simulation projects and exports will be in `simulations/`.  
+- Each module’s `README.md` summarizes goals, steps, and embeds key figures.
 
-Introduction and Getting Started with ANSYS Electronics Desktop (AEDT)
-
-Setting Up a Flip-Chip BGA Package
-
-Material Definitions and Thermal Power Sources
-
-Meshing and Running the Thermal Analysis
-
-Viewing Results and Exploring Other Package Types
-
-Assets: Add screenshots (e.g. temperature plots) to Module3_Labs_Thermal_Simulation/images/ and save simulation files (Icepak projects) in Module3_Labs_Thermal_Simulation/simulations/. Notes and lab instructions go in Module3_Labs_Thermal_Simulation/README.md.
-
-Module 4: Ensuring Package Reliability – Testing and Performance Validation
-
-Introduction to Package Testing and Electrical Functionality Checks
-
-Reliability and Performance Testing of Semiconductor Packages
-
-Assets: Place any reliability test data, charts, or images in Module4_Ensuring_Package_Reliability/images/. Document testing procedures and results in Module4_Ensuring_Package_Reliability/README.md.
-
-Module 5: Package Design and Modeling – Building a Semiconductor Package from Scratch
-
-Introduction to Package Cross-Section Modeling in ANSYS Electronics Desktop (AEDT)
-
-Creating the Die and Substrate in AEDT
-
-Adding Die Attach Material and Bond Pads
-
-Wire Bond Creation and Material Assignment
-
-Applying Mold Compound and Finalizing the Package Model
-
-Assets: Add design screenshots or CAD images to Module5_Package_Design_Modeling/images/. Save ANSYS Q3D design files in Module5_Package_Design_Modeling/simulations/. Step-by-step modeling notes go in Module5_Package_Design_Modeling/README.md.
+**Local clone (optional):**
+```bash
+git clone https://github.com/<your-username>/SemiconductorPackaging.git
